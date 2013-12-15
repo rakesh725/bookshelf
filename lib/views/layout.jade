@@ -35,3 +35,7 @@ html
                         li
                          a(href='http://www.startupinstitute.com/') Startup Institute
 
+
+        div#alert
+            -if (typeof(error) !== "undefined")
+                div.alert-box.alert #{error.message}
